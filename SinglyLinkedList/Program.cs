@@ -15,17 +15,23 @@ namespace SinglyLinkedList
             //linkedList.AddLast(56);
             //linkedList.AddLast(30);
             //linkedList.AddLast(70);
-            
+
             //foreach(int item in linkedList)
             //{
             //    Console.WriteLine("| "+item+" |");
             //}
 
-            LinkedList list = new LinkedList();
+            //LinkedList list = new LinkedList();
 
-            list.Add(70);
-            list.Add(30);
-            list.Add(56);
+            //list.Add(70);
+            //list.Add(30);
+            //list.Add(56);
+            //list.Display();
+
+            LinkedList list = new LinkedList();
+            list.AddCreatedFirstStoreLast(70);
+            list.AddCreatedFirstStoreLast(30);
+            list.AddCreatedFirstStoreLast(56);
             list.Display();
 
         }

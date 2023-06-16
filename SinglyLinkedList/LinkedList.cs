@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SinglyLinkedList
 {
@@ -26,7 +27,7 @@ namespace SinglyLinkedList
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into the linked list", node.data);
+            Console.WriteLine("{0} inserted into the linked list\n", node.data);
         }
 
         public void Display()
@@ -42,6 +43,22 @@ namespace SinglyLinkedList
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+        }
+
+        public void AddCreatedFirstStoreLast(int data)
+        {
+            Node newNode = new Node(data);
+
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            Console.WriteLine("{0} inserted into the linked list\n", newNode.data);
         }
     }
 }
