@@ -181,5 +181,35 @@ namespace SinglyLinkedList
 
             Console.WriteLine("The size of the list is: "+count);
         }
+
+        public void Sort()
+        {
+            if (head == null || head.next == null)
+            {
+                Console.WriteLine("The LinkedList is empty");
+            }
+
+            Node temp = head;
+            Node index = null;
+            int temp1;
+
+            while (temp != null)
+            {
+                index = temp.next;
+
+                while (index != null)
+                {
+                    if (temp.data > index.data)
+                    {
+                        temp1 = temp.data;
+                        temp.data = index.data;
+                        index.data = temp1;
+                    }
+
+                    index = index.next;
+                }
+                temp = temp.next;
+            }
+        }
     }
 }
