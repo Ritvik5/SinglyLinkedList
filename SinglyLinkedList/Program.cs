@@ -76,7 +76,9 @@ namespace SinglyLinkedList
             list.Display();
             list.SearchNode(30);
 
+            list.InsertAtParticularPosition(3, 40);
 
+            list.Display();
         }
     }
 }
