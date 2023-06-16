@@ -60,5 +60,38 @@ namespace SinglyLinkedList
             }
             Console.WriteLine("{0} inserted into the linked list\n", newNode.data);
         }
+
+        public Node InsertAtParticularPosition(int position, int data)
+        {
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid position");
+            }
+            if (position == 1)
+            {
+                var newNode = new Node(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                while (position-- != 0 && temp != null)
+                {
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = temp.next;
+                        temp.next = node;
+                        break;
+                    }
+
+                    temp = temp.next;
+                }
+                if (position != 1)
+                    Console.WriteLine("Position out of range");
+            }
+            return head;
+        }
     }
 }

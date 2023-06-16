@@ -28,15 +28,26 @@ namespace SinglyLinkedList
             //list.Add(56);
             //list.Display();
 
-            LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
+            //LinkedList list = new LinkedList();
+            //list.Add(56);
+            //list.Add(30);
+            //list.Add(70);
             //list.AddCreatedFirstStoreLast(70);
             //list.AddCreatedFirstStoreLast(30);
             //list.AddCreatedFirstStoreLast(56);
+            //list.Display();
+
+            LinkedList list = new LinkedList();
+            list.Add(56);
+            list.Add(70);
+
             list.Display();
 
+            list.InsertAtParticularPosition(2, 30);
+
+            Console.WriteLine("\n:::::::::::::::::::::::");
+
+            list.Display();
 
         }
     }
