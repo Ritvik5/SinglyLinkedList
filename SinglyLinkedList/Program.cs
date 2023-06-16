@@ -79,6 +79,10 @@ namespace SinglyLinkedList
             list.InsertAtParticularPosition(3, 40);
 
             list.Display();
+            Console.WriteLine();
+
+            list.RemoveAt(3);
+            list.Size();
         }
     }
 }

@@ -136,5 +136,50 @@ namespace SinglyLinkedList
             if (temp == null)
                 Console.WriteLine("Given value: " + value + " is not present in Linked list");
         }
+
+        public void RemoveAt(int position)
+        {
+            if (head == null)
+            {
+                return; 
+            }
+
+            if (position == 0)
+            {
+                head = head.next; 
+                return;
+            }
+
+            Node temp = head;
+            Node previous = null;
+            int count = 0;
+
+            while (temp != null && count < position)
+            {
+                previous = temp;
+                temp = temp.next;
+                count++;
+            }
+
+            if (temp == null)
+            {
+                return; 
+            }
+
+            previous.next = temp.next; 
+        }
+
+        public void Size()
+        {
+            int count = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+
+            Console.WriteLine("The size of the list is: "+count);
+        }
     }
 }
