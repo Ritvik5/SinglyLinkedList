@@ -65,15 +65,18 @@ namespace SinglyLinkedList
             //list.RemoveFirstNode();
             //list.Display();
 
+            //Console.WriteLine("\nAfter Deleting last node: \n");
+            //list.RemoveLastNode();
+            //list.Display();
+
             LinkedList list = new LinkedList();
             list.Add(56);
             list.Add(30);
             list.Add(70);
             list.Display();
+            list.SearchNode(30);
 
-            Console.WriteLine("\nAfter Deleting last node: \n");
-            list.RemoveLastNode();
-            list.Display();
+
         }
     }
 }

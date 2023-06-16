@@ -120,5 +120,21 @@ namespace SinglyLinkedList
             newNode.next = null;
             return head;
         }
+
+        public void SearchNode(int value)
+        {
+            Node temp = head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Given value: " + value + " is present in Linked list");
+                    return;
+                }
+                temp = temp.next;
+            }
+            if (temp == null)
+                Console.WriteLine("Given value: " + value + " is not present in Linked list");
+        }
     }
 }
