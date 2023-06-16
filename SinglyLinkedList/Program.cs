@@ -21,6 +21,8 @@ namespace SinglyLinkedList
             //    Console.WriteLine("| "+item+" |");
             //}
 
+            //-- Add elements in linkedlist
+
             //LinkedList list = new LinkedList();
 
             //list.Add(70);
@@ -37,18 +39,31 @@ namespace SinglyLinkedList
             //list.AddCreatedFirstStoreLast(56);
             //list.Display();
 
+            //-- Add elements at certain position
+
+            //LinkedList list = new LinkedList();
+            //list.Add(56);
+            //list.Add(70);
+
+            //list.Display();
+
+            //list.InsertAtParticularPosition(2, 30);
+
+            //Console.WriteLine("\n:::::::::::::::::::::::");
+
+            //list.Display();
+
+            //--Removing First Node
+
             LinkedList list = new LinkedList();
             list.Add(56);
+            list.Add(30);
             list.Add(70);
-
             list.Display();
 
-            list.InsertAtParticularPosition(2, 30);
-
-            Console.WriteLine("\n:::::::::::::::::::::::");
-
+            Console.WriteLine("\nAfter Deleting first node: \n");
+            list.RemoveFirstNode();
             list.Display();
-
         }
     }
 }

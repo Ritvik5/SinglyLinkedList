@@ -93,5 +93,13 @@ namespace SinglyLinkedList
             }
             return head;
         }
+
+        public Node RemoveFirstNode()
+        {
+            if (head == null)
+                return null;
+            head = head.next;
+            return head;
+        }
     }
 }
