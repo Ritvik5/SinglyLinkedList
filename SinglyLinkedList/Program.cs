@@ -29,10 +29,14 @@ namespace SinglyLinkedList
             //list.Display();
 
             LinkedList list = new LinkedList();
-            list.AddCreatedFirstStoreLast(70);
-            list.AddCreatedFirstStoreLast(30);
-            list.AddCreatedFirstStoreLast(56);
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            //list.AddCreatedFirstStoreLast(70);
+            //list.AddCreatedFirstStoreLast(30);
+            //list.AddCreatedFirstStoreLast(56);
             list.Display();
+
 
         }
     }
