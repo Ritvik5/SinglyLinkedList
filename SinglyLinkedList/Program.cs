@@ -55,14 +55,24 @@ namespace SinglyLinkedList
 
             //--Removing First Node
 
+            //LinkedList list = new LinkedList();
+            //list.Add(56);
+            //list.Add(30);
+            //list.Add(70);
+            //list.Display();
+
+            //Console.WriteLine("\nAfter Deleting first node: \n");
+            //list.RemoveFirstNode();
+            //list.Display();
+
             LinkedList list = new LinkedList();
             list.Add(56);
             list.Add(30);
             list.Add(70);
             list.Display();
 
-            Console.WriteLine("\nAfter Deleting first node: \n");
-            list.RemoveFirstNode();
+            Console.WriteLine("\nAfter Deleting last node: \n");
+            list.RemoveLastNode();
             list.Display();
         }
     }

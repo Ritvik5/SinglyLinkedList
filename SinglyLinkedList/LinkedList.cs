@@ -27,7 +27,7 @@ namespace SinglyLinkedList
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into the linked list\n", node.data);
+            Console.WriteLine("{0} inserted into the linked list", node.data);
         }
 
         public void Display()
@@ -99,6 +99,25 @@ namespace SinglyLinkedList
             if (head == null)
                 return null;
             head = head.next;
+            return head;
+        }
+
+        public Node RemoveLastNode()
+        {
+            if (head == null)
+            {
+                return null;
+            }
+            if (head.next == null)
+            {
+                return null;
+            }
+            Node newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
             return head;
         }
     }
